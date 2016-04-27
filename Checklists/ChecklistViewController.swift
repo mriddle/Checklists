@@ -29,44 +29,37 @@ class ChecklistViewController: UITableViewController {
   }
 
   override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 5
+    return items.count
   }
   
   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCellWithIdentifier("ChecklistItem", forIndexPath: indexPath)
     
     let label = cell.viewWithTag(1000) as! UILabel
+    let item = items[indexPath.row]
+    label.text = item.text
     
-    if indexPath.row < items.count {
-      label.text = items[indexPath.row].text
-    }
-    configureCheckmarkForCell(cell, atIndexPath: indexPath)
+    configureCheckmarkForCell(cell, item: item)
     return cell
   }
   
   override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
     
     if let cell = tableView.cellForRowAtIndexPath(indexPath) {
-      if indexPath.row < items.count {
-        let item = items[indexPath.row]
-        item.checked = !item.checked
-      }
+      let item = items[indexPath.row]
+      item.checked = !item.checked
       
-      configureCheckmarkForCell(cell, atIndexPath: indexPath)
+      configureCheckmarkForCell(cell, item: item)
     }
     
     tableView.deselectRowAtIndexPath(indexPath, animated: true)
   }
   
-  func configureCheckmarkForCell(cell: UITableViewCell, atIndexPath: NSIndexPath) {
-    if atIndexPath.row < items.count {
-      let item = items[atIndexPath.row]
-      
-      if item.checked {
-        cell.accessoryType = .Checkmark
-      } else {
-        cell.accessoryType = .None
-      }
+  func configureCheckmarkForCell(cell: UITableViewCell, item: ChecklistItem) {
+    if item.checked {
+      cell.accessoryType = .Checkmark
+    } else {
+      cell.accessoryType = .None
     }
   }
   
