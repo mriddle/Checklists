@@ -17,6 +17,8 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
     ChecklistItem(text: "Eat ice cream", checked: false)
   ]
   
+  var checklist: Checklist!
+  
   required init?(coder aDecoder: NSCoder) {
     super.init(coder: aDecoder)
     loadChecklistItems()
@@ -41,7 +43,7 @@ class ChecklistViewController: UITableViewController, ItemDetailViewControllerDe
 
   override func viewDidLoad() {
     super.viewDidLoad()
-    // Do any additional setup after loading the view, typically from a nib.
+    title = checklist.name
   }
 
   override func didReceiveMemoryWarning() {
