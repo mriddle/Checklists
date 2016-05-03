@@ -17,6 +17,7 @@
 		A8961D4F1CD19E87006AFAF4 /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8961D4E1CD19E87006AFAF4 /* ItemDetailViewController.swift */; };
 		A8961D541CD309B0006AFAF4 /* AllListsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8961D531CD309B0006AFAF4 /* AllListsViewController.swift */; };
 		A8961D561CD31108006AFAF4 /* Checklist.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8961D551CD31108006AFAF4 /* Checklist.swift */; };
+		A8F92F251CD7302D005009A6 /* IconPikerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8F92F241CD7302D005009A6 /* IconPikerViewController.swift */; };
 		A8FAB6981CD6CB75007E7222 /* ListDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8FAB6971CD6CB75007E7222 /* ListDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +34,7 @@
 		A8961D4E1CD19E87006AFAF4 /* ItemDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = ItemDetailViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		A8961D531CD309B0006AFAF4 /* AllListsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AllListsViewController.swift; path = ../AllListsViewController.swift; sourceTree = "<group>"; };
 		A8961D551CD31108006AFAF4 /* Checklist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Checklist.swift; sourceTree = "<group>"; };
+		A8F92F241CD7302D005009A6 /* IconPikerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = IconPikerViewController.swift; path = ../IconPikerViewController.swift; sourceTree = "<group>"; };
 		A8FAB6971CD6CB75007E7222 /* ListDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				A8961D531CD309B0006AFAF4 /* AllListsViewController.swift */,
+				A8F92F241CD7302D005009A6 /* IconPikerViewController.swift */,
 				A81172C41CD0660E00BA3196 /* AppDelegate.swift */,
 				A83B303B1CD6ECF800D38D88 /* DataModel.swift */,
 				A81172C61CD0660E00BA3196 /* ChecklistViewController.swift */,
@@ -158,6 +161,7 @@
 				A8FAB6981CD6CB75007E7222 /* ListDetailViewController.swift in Sources */,
 				A8961D4F1CD19E87006AFAF4 /* ItemDetailViewController.swift in Sources */,
 				A8961D561CD31108006AFAF4 /* Checklist.swift in Sources */,
+				A8F92F251CD7302D005009A6 /* IconPikerViewController.swift in Sources */,
 				A81172D91CD0859800BA3196 /* ChecklistItem.swift in Sources */,
 				A83B303C1CD6ECF800D38D88 /* DataModel.swift in Sources */,
 				A8961D541CD309B0006AFAF4 /* AllListsViewController.swift in Sources */,
