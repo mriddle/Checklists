@@ -115,6 +115,7 @@
 					A81172C01CD0660E00BA3196 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = 2V53T8UT7F;
+						LastSwiftMigration = 0820;
 					};
 				};
 			};
@@ -270,6 +271,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mriddle.Checklists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -281,6 +283,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mriddle.Checklists;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
